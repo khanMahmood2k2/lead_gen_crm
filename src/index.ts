@@ -11,7 +11,7 @@ interface LeadQualificationResult {
 }
 
 // Initialize Gemini with environment variable (configure via Firebase)
-const apiKey = process.env.GEMINI_API_KEY || "AIzaSyDqAdgPzOObOeTdyr3Lz6jxv2IrxLj1QbQ";
+const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 // Lead qualification AI function
